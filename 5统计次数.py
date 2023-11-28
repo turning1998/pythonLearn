@@ -18,4 +18,5 @@ with open('./5demo.txt') as f:
 
 # print(len(file_data )- file_data.count('\n'))
 # print(len(set(file_data))-1)
+print(str(file_data))
 print(str(file_data).split(' ').count('you'))
