@@ -11,5 +11,5 @@ with open('a.txt') as f1, open('b.txt') as f2:
 # print(content1,content2)
 
 with open('c.txt','w') as f3:
-  f3.write(content1+content2)
+  f3.write(content1+' '+content2)
   
