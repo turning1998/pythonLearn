@@ -16,3 +16,14 @@
 # 1.将多个文件的文件名写入列表
 # 遍历 列表
 # 重构文件读写代码
+# 将 a.txt, b.txt,c.txt重新写入d
+fileName=['a.txt','b.txt','c.txt']
+content=''
+for  sigleFile in fileName:
+    with open(sigleFile) as f:
+      content+=f.read()
+      
+print(content)
+
+with open('d.txt','w') as f12:
+  f12.write(content)
