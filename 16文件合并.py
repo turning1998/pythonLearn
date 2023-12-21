@@ -4,12 +4,15 @@
 # 2.写入模式创建并打开要合并的文件
 # 关闭文件 
  
-with open('a.txt') as f1, open('b.txt') as f2:
-  content1=f1.read()
-  content2=f2.read()
+# with open('a.txt') as f1, open('b.txt') as f2:
+#   content1=f1.read()
+#   content2=f2.read()
 
-# print(content1,content2)
 
-with open('c.txt','w') as f3:
-  f3.write(content1+' '+content2)
-  
+# with open('c.txt','w') as f3:
+#   f3.write(content1+' '+content2)
+
+# 合并多个文件
+# 1.将多个文件的文件名写入列表
+# 遍历 列表
+# 重构文件读写代码
