@@ -1,4 +1,7 @@
 # 文件  打开 关闭 读写 写入
+# 
+
+
 
 #   打开-open()函数
 #  open(filename,mode='r',buffering=-1,encording=None,errors=None,newline=None,closefd=True,opener=None)
