@@ -41,10 +41,16 @@
 
 
 
-# 位置参数
+# 位置参数 实参要和形参个数一直
 
 def foo (argv1,argv2,argv3):
   print(argv1,argv2,argv3)
   
 # foo('1','2') #TypeError: foo() missing 1 required positional argument: 'argv3'
 foo('2','3','2')
+
+
+
+# 关键字参数
+#eg: open('a.txt',mode='w',encoding='utf-8')
+# foo(a='1',b='2',c='3')
