@@ -22,13 +22,41 @@
 
 
 # print(res)  # 返回迭代器
-# print(list(res)) # [2, 4, 6, 8, 10]
+# print(list(res)) # [2, 4, 6, 8, 10] #map转为list
 
 # 基本用法
 # 可以在function处使用匿名函数lambda：
 # res=map(lambda x:x*2, [1, 2, 3, 4, 5])
 # map函数还可以用来进行类型转换
-print(list(map(int,(1,2,3)))) #[1,2,3]
-print(list(map(int,'123'))) #[1,2,3]
-print(list(map(int,{'1':2,'2':3,'3':4}))) #[1,2,3]
+# print(list(map(int,(1,2,3)))) #[1,2,3]
+# print(list(map(int,'123'))) #[1,2,3]
+# print(list(map(int,{'1':2,'2':3,'3':4}))) #[1,2,3]
+
+
+
+# filter()
+# filter(函数，可迭代对象)
+# 函数：函数对象，lambda表达式
+# 可迭代对象：列表/元组/range等
+# 过滤掉可迭代对象中返回值不为True的元素
+# filter函数返回一个可迭代对象
+# res=filter(lambda x:x>3, [1, 2, 3, 4, 5])
+# print(res) #<filter object at 0x7fbd48b3f490> 迭代器
+# print(list(res)) #[4,5]
+
+
+
+# reduce()
+# reduce(函数，可迭代对象)
+# 函数：函数对象，lambda表达式
+# 可迭代对象：列表/元组/range等
+# 对可迭代对象进行累积
+from functools import reduce
+res=reduce(lambda x,y:x+y, [1, 2, 3, 4, 5])
+print(res) #15
+
+
+
+
+
 
