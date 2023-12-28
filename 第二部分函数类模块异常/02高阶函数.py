@@ -51,9 +51,21 @@
 # 函数：函数对象，lambda表达式
 # 可迭代对象：列表/元组/range等
 # 对可迭代对象进行累积
-from functools import reduce
-res=reduce(lambda x,y:x+y, [1, 2, 3, 4, 5])
-print(res) #15
+
+# from functools import reduce
+# res=reduce(lambda x,y:x+y, [1, 2, 3, 4, 5])
+# print(res) #15
+
+
+# 偏函数 固定某个参数，形成新的函数【通过固定旧函数的参数形成新的参数】
+# 
+from functools import partial
+def mod( n, m ):
+  return n + m
+ 
+mod_by_100 = partial( mod, 100 ) # 固定了参数100，又不影响函数的定义
+print(mod_by_100( 7 ))  # 107
+print(mod_by_100( 9))  #109
 
 
 
